@@ -113,3 +113,6 @@ another layer of accessibility to our bot, so the conversation can be enjoyed to
    ![Bot extracts a negative sentiment](images/botsentimentneg.png)
 
 Here the bot detects the correct sentiment from the user messages.
+
+-## New additions for the individual project components
+
