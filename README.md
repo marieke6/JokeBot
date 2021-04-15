@@ -114,5 +114,7 @@ another layer of accessibility to our bot, so the conversation can be enjoyed to
 
 Here the bot detects the correct sentiment from the user messages.
 
--## New additions for the individual project components
+## New additions for Individual Project Component
+-
+-
 
