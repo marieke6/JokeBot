@@ -115,6 +115,6 @@ another layer of accessibility to our bot, so the conversation can be enjoyed to
 Here the bot detects the correct sentiment from the user messages.
 
 ## New additions for Individual Project Component
--
+- Implemented the Wikipedia Api, now chatbot can extract definitions and summaries, articles from wikipedia through the api. Searches and get the data from the subject given. You must install on terminal with the command pip install wikipedia
 -
 

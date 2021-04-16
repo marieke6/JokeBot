@@ -1,5 +1,7 @@
 version: "2.0"
 nlu:
+
+
 - intent: greet
   examples: |
     - Hey!
@@ -7,7 +9,7 @@ nlu:
     - Hello
     - Good Day
     - Good morning
-    - What's up
+    - What's up 
     - Yo
     - Good Evening
     - Hey you
@@ -115,6 +117,19 @@ nlu:
     - run a [joke]{"entity": "jokeformat"} by me
     - run a [hiarious thing]{"entity": "jokeformat"} by me
     - Tell me Another
+
+  #addition for wiki api
+- intent: wiki_subject
+  examples: |
+  - What is [University]{"entity": "wikipediasubject"}?
+  - What is [Studying]{"entity": "wikipediasubject"}?
+  - What is [Money]{"entity": "wikipediasubject"}?
+  - Who is [Ellen]{"entity": "wikipediasubject"}?
+  - Where is [America]{"entity": "wikipediasubject"}?
+  - Where is [Canada]{"entity": "wikipediasubject"}?
+  - Where is [China]{"entity": "wikipediasubject"}?
+  - Search for [Dogs]{"entity": "wikipediasubject"}?
+  - Search for [Cats]{"entity": "wikipediasubject"}?
 - intent: feedback
   examples: |
     - That was funny
@@ -244,6 +259,19 @@ nlu:
     - What came first, the [chicken]{"entity": "food"} or the [egg]{"entity": "food"}?
     - How many cm in a foot?
     - Ooh OOh AAh AH MONKE
+- lookup: wikipediasubject
+examples: |
+  - University
+  - Studying
+  - Ellen
+  - America
+  - Canada
+  - China
+  - Dogs
+  - Cats
+  - Jane
+  - Mary
+
 - lookup: food
   examples: |
     - egg

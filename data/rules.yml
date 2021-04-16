@@ -59,3 +59,7 @@ rules:
   steps:
   - intent: out_of_bounds
   - action: utter_outofbounds_response
+- rule: Search through wikipedia for user subjects
+steps:
+- intent: ask_wiki_subject
+- action: action_wiki_subject

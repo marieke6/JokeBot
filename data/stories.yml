@@ -13,7 +13,7 @@ stories:
     - gives_consent: False
   - action: utter_denyjokes #bot says ok
   - action: utter_goodbye #bot says bye
-
+ 
 - story: consent_agree
   steps:
   - intent: greet #user says hi
@@ -120,3 +120,12 @@ stories:
   - action: utter_finished
   - intent: goodbye
   - action: utter_goodbye
+
+- story: bot searches for wiki subject
+steps:
+- intent: ask_wiki_subject
+- action: action_wiki_subject
+- intent: ask_wiki_subject
+- action: action_wiki_subject
+- intent: goodbye
+- action: utter_goodbye

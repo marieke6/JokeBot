@@ -9,6 +9,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 import secrets
+import wikipedia
 
 
 class ActionTellJoke(Action):
@@ -49,3 +50,27 @@ class ActionHandleFeedback(Action):
             # feedback
 
         return []
+#wikipedia api implemmentation
+class ActionWikipedia(Action): 
+    def name(self) -> Text:
+        return "action_wiki_subject"
+    
+    def run(self, dispatcher : CollectingDispatcher, 
+    tracker: Tracker, 
+    domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    recentSearch = 
+    next(tracker.get_latest_entity_values("wikipediasubject"), None) 
+
+    try:  #wikipedia.summary prints summary from page
+        print(wikipedia.page(wikipedia.search(recentSearch))
+        dispatcher.utter_message(text= "Here are the subjects results from wikipedia") + wikipedia.summary(wikipedia.search(recentSearch)
+
+   
+    except wikipedia.exceptions.WikipediaException as e:
+        dispatcher.utter_message(text= "Could not find this subject on wikipedia! :(, try an new subject,or check for spelling errors!")    
+print(e)
+
+
+    return[]
+
+
