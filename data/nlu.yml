@@ -117,9 +117,17 @@ nlu:
     - run a [joke]{"entity": "jokeformat"} by me
     - run a [hiarious thing]{"entity": "jokeformat"} by me
     - Tell me Another
+ #additon  for google translate api
+- intent: ask_google_translate
+  examples:  |
+    - What languaes do you speak [languages] {"entity": "googletranslate"}?
+    - What are some jokes in [Spanish] {"entity": "googletranslate"}?
+    - Can you switch your language {"entity": "googletranslate"}?
+    - Can you please [translate] the joke to spanish {"entity": "googletranslate"}?
+    - Which country do people say "hola" [country]{"entity": "googletranslate"}?
 
   #addition for wiki api
-- intent: wiki_subject
+- intent: ask_wiki_subject
   examples: |
   - What is [University]{"entity": "wikipediasubject"}?
   - What is [Studying]{"entity": "wikipediasubject"}?
@@ -271,6 +279,20 @@ examples: |
   - Cats
   - Jane
   - Mary
+- lookup: googletranslate
+examples:  |
+ - bonjure
+ - hola
+ - hello
+ - languages
+ - como estas
+ - buenas dias
+ - donde esta bano
+ - translate
+ - Spanish
+ - mexico
+ -spain
+
 
 - lookup: food
   examples: |

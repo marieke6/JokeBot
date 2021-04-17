@@ -9,8 +9,9 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 import secrets
+#new imports for api's
 import wikipedia
-
+from googletrans import Translator, LANGUAGES
 
 class ActionTellJoke(Action):
 
@@ -50,6 +51,27 @@ class ActionHandleFeedback(Action):
             # feedback
 
         return []
+#google translate api implementation
+class ActionGoogleTranslate(Action):
+   def name(self) -> Text:
+        return "action_google_translate"
+
+    def run(self, dispatcher : CollectingDispatcher, 
+    tracker: Tracker, 
+    domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    translator=
+    next(tracker.get_latest_entity_values("googletranslate"), None)
+
+         translator = Translator()
+            dispatcher.utter_message(text= "hola como estas! Do you speak?") +(translator.detect(Text))
+            dispatcher.utter_message(text="Great job! I am still getting the hang of speaking spanish")
+            dispatcher.utter_message(response="utter_feedback_bad")
+            #detect method identifies language in a given sentence
+        translator.detect("This senstence is in Spanish")
+
+
+    return[]
+
 #wikipedia api implemmentation
 class ActionWikipedia(Action): 
     def name(self) -> Text:
@@ -72,5 +94,9 @@ print(e)
 
 
     return[]
+
+
+
+
 
 

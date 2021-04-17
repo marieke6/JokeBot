@@ -63,3 +63,7 @@ rules:
 steps:
 - intent: ask_wiki_subject
 - action: action_wiki_subject
+- rule: Translate chats for users
+steps:
+- intent: ask_google_translate
+- action: action_google_translate

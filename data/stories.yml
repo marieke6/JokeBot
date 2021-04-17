@@ -129,3 +129,12 @@ steps:
 - action: action_wiki_subject
 - intent: goodbye
 - action: utter_goodbye
+
+- story: Bot translates using google translate api
+steps:
+- intent: ask_google_translate
+- action: action_google_translate
+- intent: ask_google_translate
+- action: action_google_translate
+- intent: goodbye
+- action: utter_goodbye

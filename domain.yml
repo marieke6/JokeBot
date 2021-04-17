@@ -5,6 +5,8 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- ask_google_translate:
+   use_entities: true
 - ask_wiki_subject:
     use_entities: true
 - feedback:
@@ -511,5 +513,7 @@ actions:
 - utter_ask_rephrase
 - action_tell_joke
 - action_handle_feedback
+- action_wiki_subject
+- action_google_translate
 forms: {}
 e2e_actions: []

@@ -116,5 +116,5 @@ Here the bot detects the correct sentiment from the user messages.
 
 ## New additions for Individual Project Component
 - Implemented the Wikipedia Api, now chatbot can extract definitions and summaries, articles from wikipedia through the api. Searches and get the data from the subject given. You must install on terminal with the command pip install wikipedia
--
+- Implemented Google translate API, with this implemented bot can now translate user inputs given in a variety of different languages. Supports a wide list of languages. On terminal use command pip install google translate 
 
